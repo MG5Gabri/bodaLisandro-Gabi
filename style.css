@@ -332,6 +332,7 @@
   
   .modal {
     background-color: #c3cfe2;
+    color: #f8f9fa;
     display: none;
     position: fixed;
     z-index: 100;
