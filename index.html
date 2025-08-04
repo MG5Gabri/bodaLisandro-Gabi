@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación de Boda - Lisandro & Gabi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="animate__animated animate__fadeInDown">Lisandro & Gabi</h1>
+    <p class="animate__animated animate__fadeInUp">Nos casamos 💍</p>
+    <p class="fecha animate__animated animate__fadeIn">15 de agosto, 2025</p>
+    <div class="scroll-down" onclick="scrollToNextSection()">↓</div>
+  </section>
+  
+  <!-- Oración especial -->
+  <section class="oracion">
+    <h2 data-scroll="fadeIn">Una oración especial</h2>
+    <p data-scroll="fadeIn" data-scroll-delay="0.2">
+      Padre Celestial, te damos gracias porque nos permitiste encontrarnos y elegirnos el uno al otro para construir una vida juntos. 
+      Hoy, venimos a tu casa con nuestros hijos a recibir tu Bendicion, a reafirmar nuestro compromiso de amor, respeto y fidelidad. 
+      Amada María Auxiliadora te pedimos que nuestra familia sea un testimonio de tu amor y misericordia.  
+    </p>
+    <p data-scroll="fadeIn" data-scroll-delay="0.2"></p>
+      Amen.
+    </p>
+  </section>
+  
+  <!-- Detalles del evento -->
+  <section class="detalles">
+    <h2 data-scroll="fadeIn">Detalles del gran día</h2>
+    <div class="timeline">
+      <div class="evento" data-scroll="fadeIn">
+        <h3>⛪ Misa</h3>
+        <p>5:00 p.m. - Parroquia San Juan Bosco</p>
+        <p>20 Av. 13-45, Zona 11</p>
+      </div>
+      <div class="evento" data-scroll="fadeIn">
+        <h3>🎉 Recepción</h3>
+        <p>7:00 p.m. - Casa Santa Lucía</p>
+        <p>
+          3 Calle 19-75, Sector B-4 
+          San Cristobal II, zona 8 de Mixco.
+        </p>
+      </div>
+    </div>
+    
+    <div class="inf-ext">
+      <h3 class="inf-text"> Para más información hacer click en cualquiera de dos los botones </h3>
+      <div class="grid-btnes">
+        <button class="abrir-modal" onclick="abrirModal(2)">Misa</button>
+        <button class="abrir-modal" onclick="abrirModal(1)">Recepción</button>
+      </div>
+
+      <div class="modal" id="miModal">
+        <div class="modal-contenido">
+          <span class="cerrar" onclick="cerrarModal()">&times;</span>
+          <div style="display: flex; align-items: center; justify-content: center;">
+            <span class="flecha" onclick="anterior()">&#10094;</span>
+            <div class="contenido-slide" id="contenidoActual">Contenido 1</div>
+            <span class="flecha" onclick="siguiente()">&#10095;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+  <!-- Contador regresivo -->
+  <section class="countdown">
+    <h2 data-scroll="fadeIn">PARA EL DÍA DE NUESTRA BODA FALTAN...</h2>
+    <div class="countdown-container" data-scroll="fadeIn" data-scroll-delay="0.2">
+      <div class="countdown-box">
+        <div class="countdown-number" id="days">00</div>
+        <div class="countdown-label">Días</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-number" id="hours">00</div>
+        <div class="countdown-label">Horas</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-number" id="minutes">00</div>
+        <div class="countdown-label">Minutos</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-number" id="seconds">00</div>
+        <div class="countdown-label">Segundos</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Nuestra historia -->
+  <section class="historia">
+    <h2 data-scroll="fadeIn">Regalos</h2>
+    <p data-scroll="fadeIn" data-scroll-delay="0.2">
+      Algunos nos han preguntado por regalos. Lo más práctico para nosotros es una contribución en 
+      efectivo o el sobre el día del evento. Sin embargo, si prefieren hacernos un regalo, también 
+      lo recibiremos con mucho cariño. Para facilitarlo, pueden hacer clic en el botón en el cual agregamos algunas ideas. 
+      Lo más importante para nosotros es que nos acompañen en este momento tan especial. ¡Gracias de corazón!
+    </p>
+    <a href="regalos.html">
+      <button class="abrir-modal2">Regalos</button>
+    </a>
+  </section>
+  
+  <!-- Galería de fotos -->
+  <section class="collage">
+    <h2 data-scroll="fadeIn">Algunos momentos</h2>
+    <div class="fotos">
+      <div class="foto-container" data-scroll="fadeIn" data-scroll-delay="0.1">
+        <img class="foto-front" src="assets/foto1.jpeg" alt="">
+        <div class="foto-back">Nuestro primer viaje juntos</div>
+      </div>
+      <div class="foto-container" data-scroll="fadeIn" data-scroll-delay="0.2">
+<!--         <div class="foto-front" style="background-image: url('assets/foto1.jpeg"></div>
+ -->        <div class="foto-back">Celebrando nuestro aniversario</div>
+      </div>
+      <div class="foto-container" data-scroll="fadeIn" data-scroll-delay="0.3">
+<!--         <div class="foto-front" style="background-image: url('assets/foto1.jpeg');"></div>
+ -->        <div class="foto-back">El día de la propuesta</div>
+      </div>
+      <div class="foto-container" data-scroll="fadeIn" data-scroll-delay="0.4">
+<!--         <div class="foto-front" style="background-image: url('assets/foto1.jpeg;"></div>
+ -->        <div class="foto-back">Preparando todo para el gran día</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="wave"></div>
+    <p style="font-size: 1.3rem; margin-bottom: 1rem;">Con amor,</p>
+    <p style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700;">Lisandro & Gabi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
