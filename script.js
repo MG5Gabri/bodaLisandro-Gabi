@@ -124,7 +124,7 @@ const slidesGoogleMaps = [
     </iframe>
     <p>Haz clic para abrir la ubicación en Waze:</p>
     <p>⬇️⬇️⬇️</p>
-    <a class="boton-waze" href="https://ul.waze.com/ul?venue_id=176554130.1765606835.7048776&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">
+    <a class="boton-waze" href="https://ul.waze.com/ul?venue_id=176554130.1765803445.5892444&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location">
       Abrir en Waze
     </a>
   `
