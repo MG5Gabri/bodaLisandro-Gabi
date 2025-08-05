@@ -54,7 +54,7 @@ function createParticles() {
   
   // Contador regresivo para el 15 de agosto de 2025
   function updateCountdown() {
-    const weddingDate = new Date('August 15, 2025 00:00:00').getTime();
+    const weddingDate = new Date('August 15, 2025 17:00:00').getTime();
     const now = new Date().getTime();
     const distance = weddingDate - now;
     
